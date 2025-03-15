@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #21a5d5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+header {
+  background-color: var(--primary-color);
+}
+.my-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+  width: 70%;
+  margin: auto;
+}
+
+.mail,
+.address,
+.h-left,
+.h-right {
+  gap: 1rem;
+  display: flex;
+}
+
+.h-left i {
+  color: black;
+}
+
+.h-right i {
+  color: rgb(140, 218, 245);
+  transition: 0.3s;
+}
+
+.h-right i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+nav {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  padding: 0.5rem;
+}
+.my-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 70%;
+  margin: auto;
+}
+
+.menu-items {
+  display: flex;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 1rem;
+  gap: 2rem;
+}
+
+.contact-btn {
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+
+.list-icon {
+  display: none;
+  font-size: 2rem;
+}
+
+@media (max-width: 1560px) {
+  .my-header,
+  .my-nav {
+    width: 85%;
+  }
+}
+@media (max-width: 1290px) {
+  .my-header,
+  .my-nav {
+    width: 95%;
+  }
+}
+@media (max-width: 1150px) {
+  .menu-items {
+    display: none;
+  }
+
+  .list-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    justify-content: flex-start;
+  }
+  .h-left {
+    display: none;
+  }
+}
+@media (max-width: 470px) {
+  .contact-btn {
+    display: none;
+  }
+}
