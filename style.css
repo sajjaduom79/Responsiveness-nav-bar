@@ -362,6 +362,8 @@ nav {
   flex-direction: row-reverse;
 }
 
+/* responsiveness  */
+
 @media (max-width: 1360px) {
   nav {
     width: 85%;
